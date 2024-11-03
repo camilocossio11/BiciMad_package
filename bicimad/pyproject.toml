@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bicimad"
+version = "0.1.0"
+requires-python = ">=3.11"
+description = "Package to upload and analize data collected automatically directly from EMT webpage"
+authors = [{name="Camilo Cossio", email="camilo.cossio111@gmail.com"}]
+dependencies = [
+    "certifi==2024.8.30",
+    "charset-normalizer==3.4.0",
+    "idna==3.10",
+    "iniconfig==2.0.0",
+    "numpy==2.1.2",
+    "packaging==24.1",
+    "pandas==2.2.3",
+    "pluggy==1.5.0",
+    "python-dateutil==2.9.0.post0",
+    "pytz==2024.2",
+    "requests==2.32.3",
+    "six==1.16.0",
+    "tzdata==2024.2",
+    "urllib3==2.2.3"
+]
+
+[tool.setuptools.packages.find]
+exclude = ["tests*", "venv*", "dist*", "__pycache__*", ".pytest.cache*"]
